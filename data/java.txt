@@ -1,0 +1,37 @@
+JAVA PROGRAMMING
+
+Java is a high-level, object-oriented programming language.
+It was developed by James Gosling at Sun Microsystems.
+
+FEATURES OF JAVA
+1. Platform independent
+2. Object-oriented
+3. Secure
+4. Robust
+5. Multithreaded
+6. Portable
+
+JVM
+JVM stands for Java Virtual Machine.
+It executes Java bytecode and makes Java platform independent.
+
+JDK
+JDK stands for Java Development Kit.
+It contains tools required to develop and run Java applications.
+
+JRE
+JRE stands for Java Runtime Environment.
+It provides the environment required to run Java programs.
+
+OOPS CONCEPTS
+1. Encapsulation: Wrapping data and methods into a single unit.
+2. Inheritance: Acquiring properties and methods from another class.
+3. Polymorphism: One method or object can take different forms.
+4. Abstraction: Hiding implementation details and showing essential features.
+
+EXCEPTION HANDLING
+Java uses try, catch, finally, throw, and throws to handle exceptions.
+
+COLLECTIONS
+Java Collections Framework provides classes and interfaces to store and manage groups of objects.
+Examples include ArrayList, LinkedList, HashSet, and HashMap.

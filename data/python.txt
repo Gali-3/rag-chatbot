@@ -1,0 +1,36 @@
+PYTHON PROGRAMMING
+
+Python is a high-level, interpreted, general-purpose programming language.
+It was created by Guido van Rossum.
+
+FEATURES OF PYTHON
+1. Easy to learn
+2. Readable syntax
+3. Interpreted language
+4. Dynamically typed
+5. Supports object-oriented programming
+6. Large standard library
+
+PYTHON DATA TYPES
+Common data types include:
+1. int
+2. float
+3. str
+4. bool
+5. list
+6. tuple
+7. set
+8. dictionary
+
+FUNCTIONS
+A function is a reusable block of code that performs a specific task.
+Functions are defined using the def keyword.
+
+OOPS IN PYTHON
+Python supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
+
+EXCEPTION HANDLING
+Python uses try, except, else, and finally to handle exceptions.
+
+PYTHON APPLICATIONS
+Python is used in web development, automation, data science, artificial intelligence, and machine learning.

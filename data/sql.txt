@@ -1,0 +1,37 @@
+SQL DATABASE
+
+SQL stands for Structured Query Language.
+It is used to communicate with relational databases.
+
+DATABASE
+A database is an organized collection of data.
+
+DBMS
+DBMS stands for Database Management System.
+It is software used to store, manage, and retrieve data.
+
+RDBMS
+RDBMS stands for Relational Database Management System.
+It stores data in related tables.
+
+SQL COMMANDS
+
+1. CREATE: Creates a database object.
+2. INSERT: Adds new records.
+3. SELECT: Retrieves records.
+4. UPDATE: Modifies existing records.
+5. DELETE: Removes records.
+6. DROP: Removes a database object.
+
+SQL CONSTRAINTS
+1. PRIMARY KEY: Uniquely identifies each record.
+2. FOREIGN KEY: Connects related tables.
+3. NOT NULL: Prevents NULL values.
+4. UNIQUE: Prevents duplicate values.
+5. CHECK: Validates a condition.
+6. DEFAULT: Provides a default value.
+
+JOINS
+INNER JOIN returns matching records from both tables.
+LEFT JOIN returns all records from the left table and matching records from the right table.
+RIGHT JOIN returns all records from the right table and matching records from the left table.

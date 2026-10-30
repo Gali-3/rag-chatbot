@@ -1,0 +1,35 @@
+MACHINE LEARNING
+
+Machine Learning is a branch of Artificial Intelligence.
+It allows computers to learn patterns from data and make predictions.
+
+TYPES OF MACHINE LEARNING
+
+1. SUPERVISED LEARNING
+The model learns from labeled data.
+Examples: Linear Regression, Decision Tree, and Random Forest.
+
+2. UNSUPERVISED LEARNING
+The model learns patterns from unlabeled data.
+Examples: K-Means Clustering and Hierarchical Clustering.
+
+3. REINFORCEMENT LEARNING
+An agent learns by interacting with an environment and receiving rewards or penalties.
+
+LINEAR REGRESSION
+Linear Regression is used to predict a continuous numerical value.
+
+LOGISTIC REGRESSION
+Logistic Regression is commonly used for classification problems.
+
+DECISION TREE
+A Decision Tree makes predictions using a tree-like structure of decisions.
+
+RANDOM FOREST
+Random Forest combines multiple decision trees to improve prediction performance.
+
+MODEL TRAINING
+Model training is the process of teaching a machine learning algorithm using data.
+
+MODEL EVALUATION
+Model evaluation measures how well a trained model performs using metrics such as accuracy, precision, recall, and F1-score.
