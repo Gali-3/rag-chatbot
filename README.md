@@ -1,62 +1,119 @@
-# ✦ Siva AI – Intelligent Document Assistant
+# ✦ SIVA AI — Intelligent Document Assistant
 
-### AI-Powered Document Question Answering System Using Retrieval-Augmented Generation (RAG)
+<div align="center">
 
-Siva AI is an intelligent document assistant that allows users to upload PDF and TXT documents and ask questions about their content.
+### 🤖 Chat with Your Documents Using Retrieval-Augmented Generation
 
-The application uses **Retrieval-Augmented Generation (RAG)** to retrieve relevant information from uploaded documents and generate context-based responses using Google Gemini.
+An AI-powered document assistant that transforms your PDFs and text files into an interactive knowledge base.
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangChain-RAG-1C3C3C?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ChromaDB-Vector%20Database-5B4BDB?style=for-the-badge" />
+</p>
+
+**Developed by [Siva Narayana Gali](https://github.com/Gali-3)**
+
+[View Repository](https://github.com/Gali-3/rag-chatbot) • [Connect on LinkedIn](https://www.linkedin.com/in/siva-narayana-gali)
+
+</div>
 
 ---
 
 ## 🚀 Project Overview
 
-Searching for specific information in lengthy documents can be time-consuming.
+**Siva AI** is an intelligent document question-answering application built using Retrieval-Augmented Generation (RAG).
 
-Siva AI simplifies this process by combining document processing, semantic search, vector embeddings, and Large Language Models (LLMs) into an interactive chatbot application.
+It allows users to upload PDF and TXT documents, ask questions about their content, and receive context-aware answers generated using Google Gemini.
 
-Users can upload documents, ask questions, and receive answers based on the information retrieved from their documents.
+Instead of manually searching through lengthy documents, users can interact with their documents through a conversational AI interface.
 
 ## ✨ Key Features
 
-- 📄 Upload PDF and TXT documents.
-- 🔍 Extract and process document content.
-- ✂️ Split documents into smaller text chunks.
-- 🧠 Generate vector embeddings.
-- 🗄️ Store embeddings using ChromaDB.
-- 🔎 Retrieve relevant information using semantic search.
-- 🤖 Generate context-based answers using Google Gemini.
-- 💬 Interactive chatbot interface using Streamlit.
-- 📚 Manage uploaded documents and view answer sources.
+- 📄 **Document Upload:** Upload PDF and TXT files.
+- 🔍 **Document Processing:** Extract and process document content.
+- ✂️ **Text Chunking:** Divide documents into smaller meaningful chunks.
+- 🧠 **Vector Embeddings:** Convert text into numerical representations.
+- 🗄️ **Vector Database:** Store and manage embeddings using ChromaDB.
+- 🔎 **Semantic Search:** Retrieve relevant document information.
+- 🤖 **AI Answer Generation:** Generate contextual responses using Google Gemini.
+- 💬 **Interactive Chat:** Ask questions through a Streamlit interface.
+- 📚 **Document Management:** Work with uploaded documents and relevant sources.
+
+## 🏗️ System Architecture
+
+Siva AI follows a Retrieval-Augmented Generation workflow.
+
+### RAG Pipeline
+
+```text
+       USER
+         |
+         v
+   Upload Documents
+     (PDF / TXT)
+         |
+         v
+    Document Loading
+         |
+         v
+     Text Splitting
+         |
+         v
+  Generate Embeddings
+         |
+         v
+      ChromaDB
+    Vector Storage
+         |
+         |
+  USER ASKS QUESTION
+         |
+         v
+   Semantic Retrieval
+         |
+         v
+  Relevant Text Chunks
+         |
+         v
+   Google Gemini AI
+         |
+         v
+   Contextual Answer
+         |
+         v
+    STREAMLIT UI
+```
+
+### How It Works
+
+1. **Document Upload:** Users upload PDF or TXT documents.
+2. **Text Extraction:** The application extracts document content.
+3. **Chunking:** Extracted text is divided into smaller chunks.
+4. **Embedding Generation:** Text chunks are converted into vector embeddings.
+5. **Vector Storage:** Embeddings are stored in ChromaDB.
+6. **Semantic Retrieval:** Relevant chunks are retrieved based on the user's question.
+7. **AI Generation:** Retrieved context is passed to Google Gemini.
+8. **Response Display:** The generated answer is displayed in the chatbot.
 
 ## 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| Python | Backend programming |
-| Streamlit | Interactive user interface |
-| LangChain | LLM and RAG integration |
-| Google Gemini API | AI response generation |
-| Gemini Embeddings | Text embedding generation |
+| Python | Application development |
+| Streamlit | User interface |
+| LangChain | RAG pipeline integration |
+| Google Gemini | AI response generation |
+| Gemini Embeddings | Vector embedding generation |
 | ChromaDB | Vector database |
-| PyPDF | PDF text extraction |
-
-## 🏗️ RAG Architecture
-
-The application follows this workflow:
-
-1. **Document Upload:** User uploads a PDF or TXT file.
-2. **Document Loading:** Extract text from the uploaded document.
-3. **Text Splitting:** Divide the extracted content into smaller chunks.
-4. **Embedding Generation:** Convert text chunks into vector embeddings.
-5. **Vector Storage:** Store embeddings in ChromaDB.
-6. **Question Retrieval:** Search for relevant document chunks using the user's question.
-7. **Answer Generation:** Send the retrieved context to Google Gemini.
-8. **Final Response:** Display the generated answer in the Streamlit interface.
+| PyPDF | PDF document processing |
 
 ## 📂 Project Structure
 
 ```text
-rag-project/
+rag-chatbot/
 │
 ├── app.py
 ├── requirements.txt
@@ -79,97 +136,118 @@ rag-project/
 └── chroma_db/
 ```
 
-*Note: `.env`, `.venv`, and `chroma_db` are excluded from GitHub where appropriate. The vector database can be created locally when documents are processed.*
+*Note: This is the documented logical structure. Adjust filenames and folders to match the actual repository. Environment files, virtual environments and generated database files should not be committed.*
 
 ## ⚙️ Installation and Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Gali-3/rag-chatbot.git
 ```
 
-### 2. Navigate to the project folder
+### 2. Navigate to Project Directory
 
 ```bash
 cd rag-chatbot
 ```
 
-### 3. Create a virtual environment
+### 3. Create Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 4. Activate the virtual environment
+### 4. Activate Virtual Environment
 
 **Windows PowerShell:**
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
-### 5. Install dependencies
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Configure your Gemini API key
+### 6. Configure API Key
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root directory.
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Replace the placeholder with your own API key. Never upload your actual API key to GitHub.
+Replace the placeholder with your own API key. Never publish your actual API key on GitHub.
 
-### 7. Run the application
+### 7. Run the Application
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
-The application will open in your browser.
+Open the local URL displayed in your terminal.
 
 ## 💡 Example Use Case
 
-**User Question:**
+**Scenario:** A user uploads their resume to Siva AI.
+
+**Question:**
 
 "What are the technical skills mentioned in my resume?"
 
-**Siva AI:**
+**Expected Application Behavior:**
 
-Retrieves relevant information from the uploaded resume and generates an answer using the retrieved document context.
+1. Retrieves relevant sections from the uploaded resume.
+2. Passes the retrieved information to Google Gemini.
+3. Generates a contextual answer based on the document.
 
-## 🎯 Learning Outcomes
+## 🎯 Skills Demonstrated
 
-Through this project, I gained practical experience in:
+This project demonstrates practical knowledge of:
 
-- Retrieval-Augmented Generation (RAG).
-- Document processing and text chunking.
-- Embeddings and semantic search.
-- Vector database integration.
-- Large Language Model integration.
-- Building AI applications using Python and Streamlit.
+- Python programming
+- Generative AI
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Prompt engineering
+- Document processing
+- Text embeddings
+- Semantic search
+- Vector databases
+- Streamlit application development
+- API integration
 
-## 🔮 Future Improvements
+## 🔮 Future Enhancements
 
 - Support for additional document formats.
 - Improved conversational memory.
-- More advanced document retrieval.
-- User authentication and document management.
+- Advanced document retrieval techniques.
+- User authentication.
 - Enhanced response evaluation.
+- Multi-document conversational search.
 
 ## 👨‍💻 Developer
 
-**Siva Narayana**
+**Siva Narayana Gali**
 
-GitHub: https://github.com/Gali-3
+Software Developer | Java | Python | AI/ML Enthusiast
+
+- GitHub: [Gali-3](https://github.com/Gali-3)
+- LinkedIn: [Siva Narayana Gali](https://www.linkedin.com/in/siva-narayana-gali)
 
 ---
 
-⭐ If you find this project interesting, feel free to explore the repository and share your feedback.
+<div align="center">
 
-**Built with Python, Streamlit, LangChain, Google Gemini, and ChromaDB.**
+### ✦ SIVA AI
+
+**Turning Documents into Knowledge with Generative AI.**
+
+⭐ If you find this project interesting, consider giving it a star!
+
+*Built with Python, Streamlit, LangChain, Google Gemini and ChromaDB.*
+
+</div>
