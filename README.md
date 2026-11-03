@@ -16,7 +16,7 @@ An AI-powered document assistant that transforms your PDFs and text files into a
 
 **Developed by [Siva Narayana Gali](https://github.com/Gali-3)**
 
-[View Repository](https://github.com/Gali-3/rag-chatbot) • [Connect on LinkedIn](https://www.linkedin.com/in/siva-narayana-gali)
+[GitHub Repository](https://github.com/Gali-3/rag-chatbot) • [LinkedIn](https://www.linkedin.com/in/siva-narayana-gali)
 
 </div>
 
@@ -36,11 +36,33 @@ Instead of manually searching through lengthy documents, users can interact with
 - 🔍 **Document Processing:** Extract and process document content.
 - ✂️ **Text Chunking:** Divide documents into smaller meaningful chunks.
 - 🧠 **Vector Embeddings:** Convert text into numerical representations.
-- 🗄️ **Vector Database:** Store and manage embeddings using ChromaDB.
+- 🗄️ **Vector Database:** Store embeddings using ChromaDB.
 - 🔎 **Semantic Search:** Retrieve relevant document information.
 - 🤖 **AI Answer Generation:** Generate contextual responses using Google Gemini.
 - 💬 **Interactive Chat:** Ask questions through a Streamlit interface.
 - 📚 **Document Management:** Work with uploaded documents and relevant sources.
+
+## 🖥️ Application Screenshots
+
+### 1. Siva AI – Main Dashboard
+
+The main interface of Siva AI, featuring its document assistant dashboard and interactive chat experience.
+
+<img width="900" alt="Siva AI Main Dashboard" src="https://github.com/user-attachments/assets/bcb1bb4e-8081-434c-bbcc-a29d93f6fc78" />
+
+### 2. Document Upload Interface
+
+Upload PDF and TXT documents to begin interacting with your information.
+
+<img width="900" alt="Siva AI Document Upload" src="https://github.com/user-attachments/assets/fbda1c20-9e72-433c-8526-507b6ac8152f" />
+
+### 3. AI-Generated Response
+
+Ask questions about uploaded documents and receive context-aware AI-generated answers.
+
+<img width="900" alt="Siva AI Generated Answer" src="https://github.com/user-attachments/assets/33a2a803-dc92-4391-a212-72739b53aa97" />
+
+---
 
 ## 🏗️ System Architecture
 
@@ -49,42 +71,42 @@ Siva AI follows a Retrieval-Augmented Generation workflow.
 ### RAG Pipeline
 
 ```text
-       USER
-         |
-         v
-   Upload Documents
-     (PDF / TXT)
-         |
-         v
-    Document Loading
-         |
-         v
-     Text Splitting
-         |
-         v
-  Generate Embeddings
-         |
-         v
-      ChromaDB
-    Vector Storage
-         |
-         |
-  USER ASKS QUESTION
-         |
-         v
-   Semantic Retrieval
-         |
-         v
-  Relevant Text Chunks
-         |
-         v
-   Google Gemini AI
-         |
-         v
-   Contextual Answer
-         |
-         v
-    STREAMLIT UI
+           USER
+             |
+             v
+      Upload Documents
+         (PDF / TXT)
+             |
+             v
+       Document Loading
+             |
+             v
+        Text Splitting
+             |
+             v
+     Generate Embeddings
+             |
+             v
+          ChromaDB
+        Vector Storage
+             |
+             |
+      USER ASKS QUESTION
+             |
+             v
+      Semantic Retrieval
+             |
+             v
+      Relevant Text Chunks
+             |
+             v
+       Google Gemini AI
+             |
+             v
+       Contextual Answer
+             |
+             v
+        STREAMLIT UI
 ```
 
 ### How It Works
@@ -103,7 +125,7 @@ Siva AI follows a Retrieval-Augmented Generation workflow.
 | Technology | Purpose |
 |---|---|
 | Python | Application development |
-| Streamlit | User interface |
+| Streamlit | Interactive user interface |
 | LangChain | RAG pipeline integration |
 | Google Gemini | AI response generation |
 | Gemini Embeddings | Vector embedding generation |
@@ -117,7 +139,6 @@ rag-chatbot/
 │
 ├── app.py
 ├── requirements.txt
-├── .env
 ├── .gitignore
 │
 ├── data/
@@ -136,7 +157,7 @@ rag-chatbot/
 └── chroma_db/
 ```
 
-*Note: This is the documented logical structure. Adjust filenames and folders to match the actual repository. Environment files, virtual environments and generated database files should not be committed.*
+*Note: This is an illustrative logical structure. Actual filenames and folders may differ. The `.env` file, virtual environment and generated database files should remain excluded from GitHub where appropriate.*
 
 ## ⚙️ Installation and Setup
 
@@ -172,7 +193,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 6. Configure API Key
+### 6. Configure Gemini API Key
 
 Create a `.env` file in the project root directory.
 
@@ -180,7 +201,9 @@ Create a `.env` file in the project root directory.
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Replace the placeholder with your own API key. Never publish your actual API key on GitHub.
+Replace the placeholder with your own API key.
+
+**Security:** Never upload your actual API key or `.env` file to GitHub.
 
 ### 7. Run the Application
 
@@ -194,11 +217,11 @@ Open the local URL displayed in your terminal.
 
 **Scenario:** A user uploads their resume to Siva AI.
 
-**Question:**
+**User Question:**
 
 "What are the technical skills mentioned in my resume?"
 
-**Expected Application Behavior:**
+**Application Workflow:**
 
 1. Retrieves relevant sections from the uploaded resume.
 2. Passes the retrieved information to Google Gemini.
@@ -206,26 +229,26 @@ Open the local URL displayed in your terminal.
 
 ## 🎯 Skills Demonstrated
 
-This project demonstrates practical knowledge of:
+Through this project, I gained practical experience in:
 
-- Python programming
+- Python Programming
 - Generative AI
 - Retrieval-Augmented Generation (RAG)
 - Large Language Models (LLMs)
-- Prompt engineering
-- Document processing
-- Text embeddings
-- Semantic search
-- Vector databases
-- Streamlit application development
-- API integration
+- Prompt Engineering
+- Document Processing
+- Text Embeddings
+- Semantic Search
+- Vector Databases
+- Streamlit Application Development
+- API Integration
 
 ## 🔮 Future Enhancements
 
 - Support for additional document formats.
 - Improved conversational memory.
 - Advanced document retrieval techniques.
-- User authentication.
+- User authentication and document management.
 - Enhanced response evaluation.
 - Multi-document conversational search.
 
@@ -235,8 +258,8 @@ This project demonstrates practical knowledge of:
 
 Software Developer | Java | Python | AI/ML Enthusiast
 
-- GitHub: [Gali-3](https://github.com/Gali-3)
-- LinkedIn: [Siva Narayana Gali](https://www.linkedin.com/in/siva-narayana-gali)
+- **GitHub:** [Gali-3](https://github.com/Gali-3)
+- **LinkedIn:** [Siva Narayana Gali](https://www.linkedin.com/in/siva-narayana-gali)
 
 ---
 
@@ -248,6 +271,6 @@ Software Developer | Java | Python | AI/ML Enthusiast
 
 ⭐ If you find this project interesting, consider giving it a star!
 
-*Built with Python, Streamlit, LangChain, Google Gemini and ChromaDB.*
+**Built with Python, Streamlit, LangChain, Google Gemini and ChromaDB.**
 
 </div>
